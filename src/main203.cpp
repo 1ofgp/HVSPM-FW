@@ -16,12 +16,12 @@ void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(GREEN_LED, HIGH);
   PORTD = B00000000;  
-  for (int i =0; i<200; i++)
+  for (int i =0; i<150; i++)
   {
     PORTD = B10000000;
-    delayMicroseconds(5);
+    delayMicroseconds(10);
     PORTD = B01000000;
-    delayMicroseconds(5);
+    delayMicroseconds(10);
   }
 PORTD = B00000000;  
  digitalWrite(GREEN_LED, LOW);  
